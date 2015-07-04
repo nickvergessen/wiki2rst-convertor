@@ -1,0 +1,10 @@
+This page highlights important changes in phpBB 3.1.0
+
+For a complete list of changes, please refer to [https://tracker.phpbb.com/issues/?filter=12694 this report].
+
+== Notable Changes ==
+* '''More detailed migrations output''' - The console migrator and database updater now output more detailed information about the migrations that are currently being processed. In addition to that, this output will also be logged to a log file in the store folder in order to help with possible support requests.
+* '''Default user notification subscriptions''' - New users will receive emails for subscribed topics and posts by default.
+
+== Notable Bug Fixes ==
+* '''Queue Cron Job''' - The queue cron job is now checking for the correct config variable and properly processing queues, i.e. sending out emails.
