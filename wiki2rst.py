@@ -21,6 +21,8 @@ for line in source_file:
         convertor.headline(target_file, line, level=3)
         continue
 
+    line = convertor.links(line)
+
     target_file.write(line)
     target_file.write("\n")
 
